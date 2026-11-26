@@ -2,7 +2,7 @@
 
 Analyze paired C. elegans sequencing reads locally, compare suppressors against a background strain, inspect variants, export Excel reports, and make chromosome plots.
 
-**Version 1.4 is available:** [Download the Mac installer](https://github.com/TonyCrayfish/VariantAtlas-Downloads/releases/latest/download/VariantAtlas-1.4-AppleSilicon.dmg). Developer ID signed and notarized by Apple.
+**Development version 0.1 (8) is available:** [Download the Mac installer](https://github.com/TonyCrayfish/VariantAtlas-Downloads/releases/latest/download/VariantAtlas-0.1-8-AppleSilicon.dmg). Developer ID signed and notarized by Apple.
 
 ## Requirements
 
@@ -35,7 +35,7 @@ Use **Results → Columns…** to select evidence fields and double-click a vari
 
 Contact **support@tonycrayfish.com** · https://tonycrayfish.com
 
-By Tony Crayfish Productions - Version 1.4, (c) 2026 Marc Pilon, All rights reserved.
+By Tony Crayfish Productions - Version 0.1 (8), (c) 2026 Marc Pilon, All rights reserved.
 The application source repository is private. Bundled third-party tools retain their own licenses; notices and build recipes are included in the app's `Contents/Resources/Licenses` folder. Third-party source materials accompany the release separately. No sequencing data or previous analysis results are included in the download.
 
 ## Open results shared by your instructor
@@ -62,3 +62,15 @@ The genome browser shows the focused reference allele, gene/transcript tracks, e
 Reference annotation hashes are checked against the report when recorded. Legacy reports without that hash display a warning; missing custom references require the matching reference pack. Gene proximity is not proof of a regulatory target, and gene-span overlap can be intronic. Consequence annotations are unchanged. The 200-track limit is explicitly shown; zoom in to reveal crowded regions.
 
 The index is built on demand (about 56 MiB for the bundled annotation) in reports/.genome-cache, with a local-cache fallback for read-only folders. It is not included in the installer or sharing ZIP. Reports from prior versions remain readable without conversion.
+
+## Latest development release: 0.1 (8)
+
+This is newer than the historical 1.4 release. Development versions now use 0.1 with increasing build numbers; 1.0 is reserved for a future production release. For a durable student link, share [the latest release page](https://github.com/TonyCrayfish/VariantAtlas-Downloads/releases/latest).
+
+- Genome browser Previous/Next buttons navigate distinct positions. **Follow chromosome-map filters** links navigation and the table to the plotted selection; it turns on when opening a point from the map. Disable it for independent browser filters.
+- Chromosome plots offer minimum/maximum alternative-read percentages and minimum depth. A configurable **High alternative-read fraction** color rule is separate from the original genotype.
+- Pseudogenic transcript tracks are explicitly labelled, with exon context where supported by the reference; original reported consequences are preserved.
+- An offline **User guide** is available in the sidebar.
+- Plot exports record evidence thresholds; plotted Excel rows include read depth and alternative-read fraction.
+
+Existing reports and earlier saved plot settings remain compatible. No reanalysis is needed. This GitHub download is not a TestFlight upload.
