@@ -2,7 +2,7 @@
 
 Analyze paired C. elegans sequencing reads locally, compare suppressors against a background strain, inspect variants, export Excel reports, and make chromosome plots.
 
-**Version 1.3 is available:** [Download the Mac installer](https://github.com/TonyCrayfish/VariantAtlas-Downloads/releases/latest/download/VariantAtlas-1.3-AppleSilicon.dmg). Developer ID signed and notarized by Apple.
+**Version 1.4 is available:** [Download the Mac installer](https://github.com/TonyCrayfish/VariantAtlas-Downloads/releases/latest/download/VariantAtlas-1.4-AppleSilicon.dmg). Developer ID signed and notarized by Apple.
 
 ## Requirements
 
@@ -35,7 +35,7 @@ Use **Results → Columns…** to select evidence fields and double-click a vari
 
 Contact **support@tonycrayfish.com** · https://tonycrayfish.com
 
-By Tony Crayfish Productions - Version 1.3, (c) 2026 Marc Pilon, All rights reserved.
+By Tony Crayfish Productions - Version 1.4, (c) 2026 Marc Pilon, All rights reserved.
 The application source repository is private. Bundled third-party tools retain their own licenses; notices and build recipes are included in the app's `Contents/Resources/Licenses` folder. Third-party source materials accompany the release separately. No sequencing data or previous analysis results are included in the download.
 
 ## Open results shared by your instructor
@@ -52,3 +52,13 @@ Unzip the results package, choose **Open completed analysis**, and select the ou
 - **Export results for sharing…** produces the viewing ZIP directly, including saved notes and plot settings. Students can generate Excel reports after opening it. No original sequencing data is included.
 
 Existing 1.0–1.2 report folders open without conversion or reanalysis. The original reports are preserved; notes live beside them in a separate file. If upgrading, safely finish or stop an analysis before replacing its running app.
+
+## New in 1.4: genome context and plot bookmarks
+
+**Chromosome plot** now sits directly below Analysis. Click a point and use **Bookmark / notes…** to save it and enter a note, or **View in genome browser** to see its genomic neighborhood.
+
+The genome browser shows the focused reference allele, gene/transcript tracks, exon/UTR and CDS blocks, strand direction, and nearby-gene distances. It supports exact gene-name/WormBase-ID search, zoom, pan and alternative transcripts. The regional variant table includes candidates plus the focused allele by default; disable the filter for all calls. Double-click a row to inspect/bookmark it, or use Focus selected to navigate. No BAM files are needed.
+
+Reference annotation hashes are checked against the report when recorded. Legacy reports without that hash display a warning; missing custom references require the matching reference pack. Gene proximity is not proof of a regulatory target, and gene-span overlap can be intronic. Consequence annotations are unchanged. The 200-track limit is explicitly shown; zoom in to reveal crowded regions.
+
+The index is built on demand (about 56 MiB for the bundled annotation) in reports/.genome-cache, with a local-cache fallback for read-only folders. It is not included in the installer or sharing ZIP. Reports from prior versions remain readable without conversion.
