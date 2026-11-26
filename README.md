@@ -2,7 +2,7 @@
 
 Analyze paired C. elegans sequencing reads locally, compare suppressors against a background strain, inspect variants, export Excel reports, and make chromosome plots.
 
-**Download status:** Version 1.2 is being prepared. The public download will appear here after Apple notarization completes.
+**Version 1.2 is available:** [Download the Mac installer](https://github.com/TonyCrayfish/VariantAtlas-Downloads/releases/latest/download/VariantAtlas-1.2-AppleSilicon.dmg). Developer ID signed and notarized by Apple.
 
 ## Requirements
 
@@ -13,7 +13,7 @@ Analyze paired C. elegans sequencing reads locally, compare suppressors against 
 
 The app includes the WBcel235 reference genome, annotations, Python and analysis tools. You do not need Xcode, Homebrew, Conda or a separate genome download. Analysis works offline. Genome updates are optional downloads.
 
-## Install (when the release is available)
+## Install
 
 1. Download the Apple Silicon `.dmg` from [Releases](https://github.com/TonyCrayfish/VariantAtlas-Downloads/releases).
 2. Open it and drag **Tony Crayfish Variant Atlas** to **Applications**.
@@ -37,3 +37,7 @@ Contact **support@tonycrayfish.com** · https://tonycrayfish.com
 
 By Tony Crayfish Productions - Version 1.2, (c) 2026 Marc Pilon, All rights reserved.
 The application source repository is private. Bundled third-party tools retain their own licenses; notices and build recipes are included in the app's `Contents/Resources/Licenses` folder. Third-party source materials accompany the release separately. No sequencing data or previous analysis results are included in the download.
+
+## Open results shared by your instructor
+
+Unzip the results package, choose **Open completed analysis**, and select the outer analysis folder containing `reports/atlas.json`. Do not select the `reports` folder itself. This results-only package supports inspection, plotting and Excel exports without the original FASTQ or BAM files. Rerunning or resuming an analysis requires the original data and full analysis folder.
